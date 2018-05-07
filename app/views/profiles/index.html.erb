@@ -26,6 +26,7 @@
       <th>Pants inseam inches</th>
       <th>Bust inches</th>
       <th>Bra size</th>
+      <th>Profile Photo</th>>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -54,6 +55,7 @@
         <td><%= profile.pants_inseam_inches %></td>
         <td><%= profile.bust_inches %></td>
         <td><%= profile.bra_size %></td>
+        <td><%= profile.profile_photo %></td>
         <td><%= link_to 'Show', profile %></td>
         <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
         <td><%= link_to 'Destroy', profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
