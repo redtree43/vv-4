@@ -1,0 +1,122 @@
+<%= form_with(model: profile, local: true) do |form| %>
+  <% if profile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
+
+      <ul>
+      <% profile.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, id: :profile_user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, id: :profile_first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, id: :profile_last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dob %>
+    <%= form.date_select :dob, id: :profile_dob %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sex %>
+    <%= form.text_field :sex, id: :profile_sex %>
+  </div>
+
+  <div class="field">
+    <%= form.label :favourite_era %>
+    <%= form.text_field :favourite_era, id: :profile_favourite_era %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address_line_one %>
+    <%= form.text_field :address_line_one, id: :profile_address_line_one %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address_line_two %>
+    <%= form.text_field :address_line_two, id: :profile_address_line_two %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city, id: :profile_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.text_field :state, id: :profile_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country, id: :profile_country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :postcode %>
+    <%= form.text_field :postcode, id: :profile_postcode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shoe_size %>
+    <%= form.text_field :shoe_size, id: :profile_shoe_size %>
+  </div>
+
+  <div class="field">
+    <%= form.label :neck_inches %>
+    <%= form.number_field :neck_inches, id: :profile_neck_inches %>
+  </div>
+
+  <div class="field">
+    <%= form.label :chest_inches %>
+    <%= form.number_field :chest_inches, id: :profile_chest_inches %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sleeve_length_inches %>
+    <%= form.number_field :sleeve_length_inches, id: :profile_sleeve_length_inches %>
+  </div>
+
+  <div class="field">
+    <%= form.label :waist_inches %>
+    <%= form.number_field :waist_inches, id: :profile_waist_inches %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hips_inches %>
+    <%= form.number_field :hips_inches, id: :profile_hips_inches %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pants_inseam_inches %>
+    <%= form.number_field :pants_inseam_inches, id: :profile_pants_inseam_inches %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bust_inches %>
+    <%= form.number_field :bust_inches, id: :profile_bust_inches %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bra_size %>
+    <%= form.text_field :bra_size, id: :profile_bra_size %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

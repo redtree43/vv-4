@@ -1,0 +1,67 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Profiles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Dob</th>
+      <th>Sex</th>
+      <th>Favourite era</th>
+      <th>Address line one</th>
+      <th>Address line two</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Country</th>
+      <th>Postcode</th>
+      <th>Shoe size</th>
+      <th>Neck inches</th>
+      <th>Chest inches</th>
+      <th>Sleeve length inches</th>
+      <th>Waist inches</th>
+      <th>Hips inches</th>
+      <th>Pants inseam inches</th>
+      <th>Bust inches</th>
+      <th>Bra size</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @profiles.each do |profile| %>
+      <tr>
+        <td><%= profile.user %></td>
+        <td><%= profile.first_name %></td>
+        <td><%= profile.last_name %></td>
+        <td><%= profile.dob %></td>
+        <td><%= profile.sex %></td>
+        <td><%= profile.favourite_era %></td>
+        <td><%= profile.address_line_one %></td>
+        <td><%= profile.address_line_two %></td>
+        <td><%= profile.city %></td>
+        <td><%= profile.state %></td>
+        <td><%= profile.country %></td>
+        <td><%= profile.postcode %></td>
+        <td><%= profile.shoe_size %></td>
+        <td><%= profile.neck_inches %></td>
+        <td><%= profile.chest_inches %></td>
+        <td><%= profile.sleeve_length_inches %></td>
+        <td><%= profile.waist_inches %></td>
+        <td><%= profile.hips_inches %></td>
+        <td><%= profile.pants_inseam_inches %></td>
+        <td><%= profile.bust_inches %></td>
+        <td><%= profile.bra_size %></td>
+        <td><%= link_to 'Show', profile %></td>
+        <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
+        <td><%= link_to 'Destroy', profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Profile', new_profile_path %>
