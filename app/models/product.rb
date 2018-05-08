@@ -8,5 +8,5 @@ class Product < ApplicationRecord
   # validates :size_on_product, presence: true
   # validates :size_standardised, presence: true
   # validates :brand, presence: true
-  # validates :photo_1, presence: true
+
 end

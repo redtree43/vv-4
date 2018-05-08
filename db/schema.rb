@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180508010204) do
+ActiveRecord::Schema.define(version: 20180508043026) do
 
   create_table "products", force: :cascade do |t|
     t.integer "user_id"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20180508010204) do
     t.string "size_on_product"
     t.string "size_standardised"
     t.string "brand"
-    t.text "photo_1"
+    t.text "image_data"
     t.text "photo_2"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
