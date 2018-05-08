@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  product_type: MyString
+  year_of_manufacture: MyString
+  price: 1.5
+  colour: MyString
+  material: MyString
+  size_on_product: MyString
+  size_standardised: MyString
+  brand: MyString
+  photo_1: MyText
+  photo_2: MyText
+
+two:
+  user: two
+  product_type: MyString
+  year_of_manufacture: MyString
+  price: 1.5
+  colour: MyString
+  material: MyString
+  size_on_product: MyString
+  size_standardised: MyString
+  brand: MyString
+  photo_1: MyText
+  photo_2: MyText

@@ -1,0 +1,72 @@
+<%= form_with(model: product, local: true) do |form| %>
+  <% if product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% product.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, id: :product_user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :product_type %>
+    <%= form.text_field :product_type, id: :product_product_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year_of_manufacture %>
+    <%= form.text_field :year_of_manufacture, id: :product_year_of_manufacture %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :product_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :colour %>
+    <%= form.text_field :colour, id: :product_colour %>
+  </div>
+
+  <div class="field">
+    <%= form.label :material %>
+    <%= form.text_field :material, id: :product_material %>
+  </div>
+
+  <div class="field">
+    <%= form.label :size_on_product %>
+    <%= form.text_field :size_on_product, id: :product_size_on_product %>
+  </div>
+
+  <div class="field">
+    <%= form.label :size_standardised %>
+    <%= form.text_field :size_standardised, id: :product_size_standardised %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand %>
+    <%= form.text_field :brand, id: :product_brand %>
+  </div>
+
+  <div class="field">
+    <%= form.label :photo_1 %>
+    <%= form.text_area :photo_1, id: :product_photo_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :photo_2 %>
+    <%= form.text_area :photo_2, id: :product_photo_2 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
