@@ -1,3 +1,12 @@
 class Product < ApplicationRecord
-  belongs_to :user
+  include ImageUploader[:image]
+
+  # belongs_to :user
+  # validates :product_type, presence: true
+  # validates :price, presence: true
+  # validates :colour, presence: true
+  # validates :size_on_product, presence: true
+  # validates :size_standardised, presence: true
+  # validates :brand, presence: true
+
 end

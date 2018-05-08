@@ -23,7 +23,7 @@
   <tbody>
     <% @products.each do |product| %>
       <tr>
-        <td><%= product.user %></td>
+        <td><%= product.user_id %></td>
         <td><%= product.product_type %></td>
         <td><%= product.year_of_manufacture %></td>
         <td><%= product.price %></td>
@@ -32,7 +32,7 @@
         <td><%= product.size_on_product %></td>
         <td><%= product.size_standardised %></td>
         <td><%= product.brand %></td>
-        <td><%= product.photo_1 %></td>
+        <td><%#= image_tag product.image_url %></td>
         <td><%= product.photo_2 %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
@@ -45,3 +45,5 @@
 <br>
 
 <%= link_to 'New Product', new_product_path %>
+
+<%# <% unless @product.image_data == nil %>  

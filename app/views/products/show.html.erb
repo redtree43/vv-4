@@ -2,7 +2,7 @@
 
 <p>
   <strong>User:</strong>
-  <%= @product.user %>
+  <%= @product.user_id %>
 </p>
 
 <p>
@@ -47,7 +47,7 @@
 
 <p>
   <strong>Photo 1:</strong>
-  <%= @product.photo_1 %>
+  <%= image_tag @product.image_url(:profile) %> 
 </p>
 
 <p>
