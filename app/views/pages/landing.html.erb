@@ -1,26 +1,44 @@
-<h1>Pages#landing</h1>
-<p>Find me in app/views/pages/landing.html.erb</p>
+<h1>Vintage Voyage - Landing Page</h1>
+<p>Welcome to buying original fashion from the 20th century</p>
+
+<nav>
+  <div>
+    <li>
+    <%= link_to('About', about_path) %>
+    </li>
+    <li>
+    <%= link_to('Contact Me', contact_path) %>
+    </li>
 
 
-<%= link_to('About', about_path) %>
-<%= link_to('Contact Me', contact_path) %>
+    <% if user_signed_in? %>
+      <li>
+      <%= link_to('My Profile', edit_user_registration_path) %>
+      </li>
+    <% else %>
+      <li>
+      <%= link_to('Register', new_user_registration_path)  %>
+      </li>
+    <% end %>
 
-<% if user_signed_in? %>
-  <li>
-  <%= link_to('My Profile', edit_user_registration_path) %>
-  </li>
-<% else %>
-  <li>
-  <%= link_to('Register', new_user_registration_path)  %>
-  </li>
-<% end %>
+    <% if user_signed_in? %>
+      <li>
+      <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
+      </li>
+    <% else %>
+      <li>
+      <%= link_to('Login', new_user_session_path)  %>  
+      </li>
+    <% end %>
+  </div>
+</nav>
 
-<% if user_signed_in? %>
-  <li>
-  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
-  </li>
-<% else %>
-  <li>
-  <%= link_to('Login', new_user_session_path)  %>  
-  </li>
-<% end %>
+<images>
+  <% @firstsix.each do |image| %>
+      <div>
+          <%= image.product_type %><br/>
+          <%= image.price %><br/>
+          <%= image_tag image.image_url(:original) %>
+      </div>    
+  <% end %>
+</images>
