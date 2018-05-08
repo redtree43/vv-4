@@ -9,6 +9,7 @@ end
 gem 'image_processing', '~> 1.2'
 gem "shrine", "~> 2.0"
 gem 'devise'
+gem 'dotenv-rails', groups: [:development, :test]
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
