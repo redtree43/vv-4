@@ -1,21 +1,23 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  buyer_id: 1
-  user: one
+  buyer: 1
+  seller: one
   order_value: 1
-  order_date: 2018-05-09 11:55:51
+  order_date: 2018-05-09 13:09:37
   delivery_address: MyString
   product: one
   product_quantity: 1
   product_price: 1
+  charge_identifier: MyString
 
 two:
-  buyer_id: 1
-  user: two
+  buyer: 1
+  seller: two
   order_value: 1
-  order_date: 2018-05-09 11:55:51
+  order_date: 2018-05-09 13:09:37
   delivery_address: MyString
   product: two
   product_quantity: 1
   product_price: 1
+  charge_identifier: MyString

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Buyer:</strong>
+  <%= @order.buyer %>
+</p>
+
+<p>
+  <strong>Seller:</strong>
+  <%= @order.seller %>
+</p>
+
+<p>
+  <strong>Order value:</strong>
+  <%= @order.order_value %>
+</p>
+
+<p>
+  <strong>Order date:</strong>
+  <%= @order.order_date %>
+</p>
+
+<p>
+  <strong>Delivery address:</strong>
+  <%= @order.delivery_address %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @order.product %>
+</p>
+
+<p>
+  <strong>Product quantity:</strong>
+  <%= @order.product_quantity %>
+</p>
+
+<p>
+  <strong>Product price:</strong>
+  <%= @order.product_price %>
+</p>
+
+<p>
+  <strong>Charge identifier:</strong>
+  <%= @order.charge_identifier %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

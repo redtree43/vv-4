@@ -34,11 +34,16 @@
 </nav>
 
 <images>
-  <% @firstsix.each do |image| %>
+  <% @firstsix.each do |product| %>
       <div>
-          <%= image.product_type %><br/>
-          <%= image.price %><br/>
-          <%= (image_tag image.image_url(:original)) %>
+         <h2> <%= product.product_type %></h2><br/>
+         <h3>$<%= product.price %>0</h3><br/>
+
+        <%= link_to product_path(product) do %>
+         <%= image_tag product.image_url(:medium) %>
+        <% end %>
+
+          
       </div>    
   <% end %>
 </images>

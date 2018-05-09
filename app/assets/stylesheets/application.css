@@ -24,12 +24,21 @@ nav {
 
 images {
     margin: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 body {
-    background-colour: #763D18
+    background-color: #CAD0B0;
+}
+
+h1 {
+    color: #4B1B06;
+}
+
+p {
+    color: #4B1B06;
 }

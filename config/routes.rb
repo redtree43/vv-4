@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :orders
   resources :products
   resources :profiles
   get '/tables', to: 'tables#all_tables'
