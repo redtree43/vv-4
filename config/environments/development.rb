@@ -33,6 +33,12 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
+  # Mailgun Config
+  config.action_mailer.delivery_method = :mailgun
+  config.action_mailer.mailgun_settings = {
+    api_key: 'pubkey-1a9fa2c694781bd5266a34118ace5335',
+    domain: 'https://vintage-voyage.herokuapp.com/',
+  }
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
