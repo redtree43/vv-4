@@ -12,8 +12,11 @@
 
 ActiveRecord::Schema.define(version: 20180508043026) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "products", force: :cascade do |t|
-    t.integer "user_id"
+    t.bigint "user_id"
     t.string "product_type"
     t.string "year_of_manufacture"
     t.float "price"
@@ -30,7 +33,7 @@ ActiveRecord::Schema.define(version: 20180508043026) do
   end
 
   create_table "profiles", force: :cascade do |t|
-    t.integer "user_id"
+    t.bigint "user_id"
     t.string "first_name"
     t.string "last_name"
     t.date "dob"
@@ -74,4 +77,6 @@ ActiveRecord::Schema.define(version: 20180508043026) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "products", "users"
+  add_foreign_key "profiles", "users"
 end
