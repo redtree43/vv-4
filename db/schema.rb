@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180509030937) do
+ActiveRecord::Schema.define(version: 20180509074506) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 20180509030937) do
     t.bigint "user_id"
     t.string "product_type"
     t.string "year_of_manufacture"
-    t.float "price"
+    t.integer "price"
     t.string "colour"
     t.string "material"
     t.string "size_on_product"
