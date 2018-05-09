@@ -38,7 +38,7 @@
       <div>
           <%= image.product_type %><br/>
           <%= image.price %><br/>
-          <%= image_tag image.image_url(:original) %>
+          <%= link_to (image_tag image.image_url(:original), @product) %>
       </div>    
   <% end %>
 </images>
