@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get '/contact', to: 'pages#contact'
   get '/profile', to: 'profiles#show'
   get '/users', to: 'profiles#new'
+  post '/contact', to: 'pages#contact_email'
 
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
