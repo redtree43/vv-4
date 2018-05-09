@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
 
   resources :orders
-  resources :products
   resources :profiles
+  
+  resources :products do
+    member do
+      # /sneakers/:id/charge
+      post 'charge'
+    end
+  end
   get '/tables', to: 'tables#all_tables'
   get '/tables/table/:table_name', to: 'tables#table', as: 'table'
 

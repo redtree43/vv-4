@@ -13,6 +13,7 @@ gem "shrine", "~> 2.0"
 gem 'devise'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'pg'
+gem 'stripe'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'

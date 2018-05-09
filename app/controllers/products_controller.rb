@@ -22,6 +22,28 @@ class ProductsController < ApplicationController
   def edit
   end
 
+  # POST /sneakers/1/charge
+  def charge
+    @product = Product.find(params[:id])
+    amount = @product.price
+
+    customer = Stripe::Customer.create(
+      email:  params[:stripeEmail],
+      source: params[:stripeToken]
+    )
+
+    charge = Stripe::Charge.create(
+      customer:     customer.id,
+      amount:       amount,
+      description:  @product.product_type,
+      currency:     'aud'
+    )
+
+    flash[:notice] = 'Payment made!'
+
+    redirect_to products_path
+  end
+
   # POST /products
   # POST /products.json
   def create
