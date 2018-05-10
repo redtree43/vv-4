@@ -22,7 +22,7 @@ class PagesController < ApplicationController
       }
     ContactMailer.send_contact_email(user_info).deliver_now
     # render :contact
-    redirect_to landing_path, notice: "No refunds"
+    redirect_to landing_path, notice: "Email sent. No refunds"
   end 
 
   private 

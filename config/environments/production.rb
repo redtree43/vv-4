@@ -43,9 +43,10 @@ Rails.application.configure do
     # Mailgun Config
     config.action_mailer.delivery_method = :mailgun
     config.action_mailer.mailgun_settings = {
-      api_key: 'pubkey-1a9fa2c694781bd5266a34118ace5335',
+      api_key: 'pubkey-f4dc2b82fd209cb69b1883ccbedf8ef2',
       domain: 'https://vintage-voyage.herokuapp.com/',
     }
+    # pubkey-1a9fa2c694781bd5266a34118ace5335
   # Mount Action Cable outside main process or domain
   # config.action_cable.mount_path = nil
   # config.action_cable.url = 'wss://example.com/cable'
