@@ -22,6 +22,18 @@
     flex-wrap: wrap;
 } */
 
+* {
+    font-family: 'Martel', serif;
+
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #CAD0B0;
+    display: grid;
+    grid-template-columns: 3fr;
+}
+
 images {
     margin: 10px;
     padding: 20px;
@@ -43,13 +55,9 @@ p {
     color: #4B1B06;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #CAD0B0;
-    display: grid;
+#wrapper {
+    grid-column-start: 1/2;
 }
-
 
 .topnav {
     background-color: #4B1B06;
@@ -60,6 +68,7 @@ html, body {
     margin: 0;
     font-family: 'Old Standard TT', serif;
 
+
 }
 
 /* Style the links inside the navigation bar */
@@ -67,7 +76,6 @@ html, body {
     /* float: left; */
     /* text-align: center; */
     padding: 14px 16px;
-    text-decoration: none;
     font-size: 25px;
     color: #F7E2B7;
 }
@@ -80,5 +88,8 @@ html, body {
 .contact-form {
     display: inline-block;
     text-align: center;
-
 }
+
+label {
+    display: block;
+  }

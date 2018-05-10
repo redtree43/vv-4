@@ -100,10 +100,6 @@
   <%= @profile.bra_size %>
 </p>
 
-<p>
-  <strong>Profile Photo:</strong>
-  <%= @profile.profile_photo %>
-</p>
-
+<%= link_to 'New Product', new_product_path %>
 <%= link_to 'Edit', edit_profile_path(@profile) %> |
 <%= link_to 'Back', profiles_path %>
