@@ -30,7 +30,7 @@ Vintage Voyage will allow vintage buyers and sellers to connect online to sell a
 ## <a id="ProjectManagement"></a>Project Management
 In combination with my notepad, Trello was used as my task management tool. It allowed me to scope my project prior to starting and keep track of where I was at throughout.
 
-![](/docs/images/trello.png)
+![](https://github.com/redtree43/vv-4/blob/master/docs/images/trello.PNG)
 
 ## <a id="UserStories"></a>User Stories
 ### Buyers
