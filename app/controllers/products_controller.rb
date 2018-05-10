@@ -25,7 +25,7 @@ class ProductsController < ApplicationController
   # POST /sneakers/1/charge
   def charge
     @product = Product.find(params[:id])
-    amount = @product.price
+    amount = @product.price.to_i
 
     customer = Stripe::Customer.create(
       email:  params[:stripeEmail],
