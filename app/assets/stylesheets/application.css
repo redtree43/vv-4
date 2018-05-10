@@ -24,7 +24,7 @@
 
 * {
     font-family: 'Martel', serif;
-
+    color: #4B1B06;
 }
 html, body {
     margin: 0;
@@ -46,6 +46,11 @@ images {
 h1 {
     text-align: center;
     font-family: 'Cabin', sans-serif;
+    color: #4B1B06;
+}
+
+h2 {
+    text-align: center;
     color: #4B1B06;
 }
 

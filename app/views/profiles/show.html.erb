@@ -99,7 +99,8 @@
   <strong>Bra size:</strong>
   <%= @profile.bra_size %>
 </p>
-
-<%= link_to 'New Product', new_product_path %>
-<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<p>
+<%= link_to 'List a New Product', new_product_path %>
+<%= link_to 'Edit Profile', edit_profile_path(@profile) %>
 <%= link_to 'Back', profiles_path %>
+</p>

@@ -26,7 +26,10 @@
         <td><%= product.material %></td>
         <td><%= product.size_standardised %></td>
         <td><%= product.brand %></td>
+        <%= link_to product_path(product) do %>
         <td><%= image_tag product.image_url(:medium) %></td>
+        <% end %>
+
         <%# <td><%= product.photo_2</td> %>
         <td><%= link_to 'Show', product %></td>
 
