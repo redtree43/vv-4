@@ -55,18 +55,18 @@ In combination with my notepad, Trello was used as my task management tool. It a
 ## <a id="ERD"></a>ERD
 I originally had lofty plans for my database design but realised that I didn't have the technical skill to back it up so I went for a simpler model in the end. Users would be able to place orders, list products, create a profile, and message each other.
 
-![](/docs/images/ERD.png)
+![](https://github.com/redtree43/vv-4/blob/master/docs/images/ERD.PNG)
 
 ## <a id="Moodboard"></a>Mood Board
 My moodboard was predominantly made up of images from the 1950s. The colours in these photos are a mix of vibrant and soft and generally the clothing stands out against a more mellow background. I went with a similar colour scheme for the website using a pastel green, rich brown, and a soft cream.
 
-![](/docs/images/trello.png)
+![](https://github.com/redtree43/vv-4/blob/master/docs/images/mood_board.PNG)
 
 ## <a id="Wireframes"></a>Wireframes
 
-![](/docs/images/wireframes.png)
-![](/docs/images/user_flow.png)
-![](/docs/images/colours_&_fonts.png)
+![](https://github.com/redtree43/vv-4/blob/master/docs/images/wireframes.PNG)
+![](https://github.com/redtree43/vv-4/blob/master/docs/images/user_flow.PNG)
+![](https://github.com/redtree43/vv-4/blob/master/docs/images/colours_%26_fonts.PNG)
 
 ## <a id="RubyGem"></a>Ruby Gems I used in this Project
 - 'image_processing', '~> 1.2'
@@ -84,4 +84,4 @@ My moodboard was predominantly made up of images from the 1950s. The colours in 
 - Many thanks to everyone who assisted me in overcoming difficulties throughout this project. 
 
 ## <a id="FinalProduct"></a>Final Product
-![](/docs/images/final_project.png)
+![](https://github.com/redtree43/vv-4/blob/master/docs/images/final_project.PNG)
