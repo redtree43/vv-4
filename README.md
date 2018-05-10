@@ -63,6 +63,7 @@ My moodboard was predominantly made up of images from the 1950s. The colours in 
 ![](https://github.com/redtree43/vv-4/blob/master/docs/images/mood_board.PNG)
 
 ## <a id="Wireframes"></a>Wireframes
+I wanted my homepage to have an endless scroll so that user's would have as few barriers to selling as possible.
 
 ![](https://github.com/redtree43/vv-4/blob/master/docs/images/wireframes.PNG)
 ![](https://github.com/redtree43/vv-4/blob/master/docs/images/user_flow.PNG)
