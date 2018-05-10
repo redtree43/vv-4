@@ -14,13 +14,13 @@
  *= require_self
  */
 
-nav {
+/* nav {
     margin: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-}
+} */
 
 images {
     margin: 10px;
@@ -31,14 +31,54 @@ images {
     flex-wrap: wrap;
 }
 
-body {
-    background-color: #CAD0B0;
-}
-
 h1 {
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
     color: #4B1B06;
 }
 
 p {
+    text-align: center;
+    font-family: 'Martel', serif;
     color: #4B1B06;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #CAD0B0;
+    display: grid;
+}
+
+
+.topnav {
+    background-color: #4B1B06;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    font-family: 'Old Standard TT', serif;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav li {
+    /* float: left; */
+    /* text-align: center; */
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #F7E2B7;
+}
+
+.block {
+    display: inline-block;
+    text-align: center;
+}
+
+.contact-form {
+    display: inline-block;
+    text-align: center;
+
 }
